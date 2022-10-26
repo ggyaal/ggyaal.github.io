@@ -1,36 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
+import Snuppy from '../components/Snuppy';
+import Header from '../components/Header';
 
 const Container = styled.div`
-  height: 50px;
-  border-bottom: 1px solid #787a91;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
 `;
 
-const HeaderSep = styled.div`
-  height: 100%;
+const Main = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Seperator = styled.div`
+  flex-basis: 50px;
+`;
+
+const Block = styled.div`
+  width: 800px;
+  background-color: aliceblue;
+  flex-basis: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-const Logo = styled.a`
-  @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
-
-  font-family: 'Hurricane', cursive;
-  font-weight: 800;
-  font-size: 25px;
-`;
+const Content = styled.div``;
 
 function Home() {
   return (
     <Container>
-      <HeaderSep>
-        <Logo>GGYAALDOC</Logo>
-      </HeaderSep>
-      <HeaderSep></HeaderSep>
+      <Header />
+      <Main>
+        <Seperator />
+        <Block>Hello !</Block>
+        <Block>
+          <Snuppy />
+        </Block>
+      </Main>
     </Container>
   );
 }
