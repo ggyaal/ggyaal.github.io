@@ -31,7 +31,7 @@ function Header() {
   return (
     <Container>
       <HeaderSep>
-        <Logo to="/">GGYAALDOC</Logo>
+        <Logo to="/">GGYAAL</Logo>
       </HeaderSep>
       <HeaderSep>
         <UserLarge size="2x" />
