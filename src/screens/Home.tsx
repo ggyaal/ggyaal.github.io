@@ -79,6 +79,16 @@ function Home() {
           />
           <Comment>from. 햇모닝</Comment>
         </Block>
+        <Block>
+          <Divider />
+        </Block>
+        <Block>
+          <ImgBlock
+            url="https://cdn.discordapp.com/attachments/1034815593385304166/1036901670279458859/unknown.png"
+            width={550}
+          />
+          <Comment>from. 긍정짱</Comment>
+        </Block>
         <Block>Bye !</Block>
       </Main>
     </Container>
